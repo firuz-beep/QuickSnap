@@ -34,10 +34,11 @@ namespace CardGames.GameLogic
 		/// <summary>
 		/// Create a new game of Snap!
 		/// </summary>
-		public Snap ()
-		{
-			_deck = new Deck ();
-		}
+public Snap ()
+ {
+ _deck = new Deck ();
+ _gameTimer = SwinGame.CreateTimer ();
+ }
 
 		/// <summary>
 		/// Gets the card on the top of the "flip" stack. This card will be face up.
